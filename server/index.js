@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var http = require('http');
-var config = require('../../../config/config.js').gc2;
+var config = require('../../../config/config.js');
 var app = require('express')();
 var request = require('request');
 var uuid = require('uuid');
@@ -16,7 +16,7 @@ router.post('/api/feedback', (req, res, next) => {
         console.log('fields', fields);
         console.log('files', files);
 
-        sgMail.setApiKey("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");
+        sgMail.setApiKey(config?.extensionConfig?.detailhandelsportalen?.sgMailKey);
 
         let attachments = []
         if(Object.keys(files).length > 0){
