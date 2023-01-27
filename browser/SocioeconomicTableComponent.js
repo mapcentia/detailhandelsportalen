@@ -41,6 +41,7 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableData("18-27 år", economy.ant_18_27p, economy.befsum)}
                         {this.economyTableData("28-37 år", economy.ant_28_37p, economy.befsum)}
                         {this.economyTableData("38-47 år", economy.ant_38_47p, economy.befsum)}
+                        {this.economyTableData("48-65 år", economy.ant_48_65p, economy.befsum)}
                         {this.economyTableData("65+ år", economy.ant_66pl, economy.befsum)}
                         {this.economyTableData("Samlet", economy.befsum)}
                         <tr><td colSpan="3"></td></tr>
