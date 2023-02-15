@@ -93,6 +93,11 @@ module.exports = {
     },
 
     init: function () {
+
+        backboneEvents.get().on("on:customData", function (e) {
+            $("#info-table").html(JSON.parse(e));
+        });
+
         var dict = {
 
             "Info": {
