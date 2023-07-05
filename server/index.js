@@ -37,7 +37,7 @@ router.post('/api/feedback', (req, res, next) => {
     
         let dhpEmail = {
             to: "dann@cowi.com",
-            from: "no-reply@detailhandelsportalen.dk",
+            from: "detailhandelsportalen@cowi.com",
             subject: `Detailhandelsportalen.dk - Kontaktformular [${uuid.v4()}]`,
             html: customerMessage,
             attachments: attachments
@@ -47,7 +47,6 @@ router.post('/api/feedback', (req, res, next) => {
             <p>Hej ${fields.name}</p>
             <p>Tak for din henvendelse</p>
             <p>Du vil høre fra os hurtigst muligt <br /> <br /></p>
-            <p>Bemærk at denne e-mail IKKE kan besvares.</p>
             <p>Med venlig hilsen</p>
             <p>Teamet bag detailhandelsportalen</p>
             <p><b>Historik</b></p>
@@ -58,7 +57,7 @@ router.post('/api/feedback', (req, res, next) => {
     
         let recieptMail = {
             to: fields.email,
-            from: "no-reply@detailhandelsportalen.dk",
+            from: "detailhandelsportalen@cowi.com",
             subject: `Detailhandelsportalen.dk - Kontaktformular [${uuid.v4()}]`,
             html: receiptFeedback,
             attachments: attachments
