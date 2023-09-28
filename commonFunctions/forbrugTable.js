@@ -77,10 +77,10 @@ class ForbrugTable extends React.Component{
         Object.keys(this.state.spendings).forEach((spendings_category) => {
             let sum_array = [];
             Object.keys(this.state.houseInSum).forEach((house_type, hus_index) => {
-                console.log({category: spendings_category, house: this.state.houseInSum[house_type], spendings: this.state.spendings[spendings_category][hus_index]});
+                // console.log({category: spendings_category, house: this.state.houseInSum[house_type], spendings: this.state.spendings[spendings_category][hus_index]});
                 sum_array.push(this.state.houseInSum[house_type] * this.state.spendings[spendings_category][hus_index]);
             });
-            console.log({[spendings_category]: sum_array})
+            // console.log({[spendings_category]: sum_array})
         
             results[spendings_category] = sum_array.reduce((acc, val) => acc + val);
         });
@@ -129,7 +129,7 @@ class ForbrugTable extends React.Component{
                 </React.Fragment>
             }else{
                 //house hold calculation results DOM when husinksum is 0
-                householdInformation = <td colSpan="2">Der blev ikke fundet nogle husstande inden for det valgte opland. Det kan skyldes at området i dag er ubefolket, eller ny udstykket hvorfor data endnu ikke er tilgængelig fra DST.</td>;
+                householdInformation = <p>Der blev ikke fundet nogle husstande inden for det valgte opland. Det kan skyldes at området i dag er ubefolket, eller ny udstykket hvorfor data endnu ikke er tilgængelig fra DST.</p>;
             }
             renderData = <table className="table tableContainer">
                     <tbody>
