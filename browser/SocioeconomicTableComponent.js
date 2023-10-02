@@ -68,11 +68,11 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"><b>Antal</b></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
-                        {this.economyTableData("1 person", economy.ant_husst_, economy.hussum)}
-                        {this.economyTableData("2 personer", economy.ant_huss_1, economy.hussum)}
-                        {this.economyTableData("3 personer", economy.ant_huss_2, economy.hussum)}
-                        {this.economyTableData("4 personer", economy.ant_huss_3, economy.hussum)}
-                        {this.economyTableData("5+ personer", economy.ant_huss_4, economy.hussum)}
+                        {this.economyTableData("1 person", economy.ant_husst_1per, economy.hussum)}
+                        {this.economyTableData("2 personer", economy.ant_husst_2per, economy.hussum)}
+                        {this.economyTableData("3 personer", economy.ant_husst_3per, economy.hussum)}
+                        {this.economyTableData("4 personer", economy.ant_husst_4per, economy.hussum)}
+                        {this.economyTableData("5+ personer", economy.ant_husst_5pl_, economy.hussum)}
                         {this.economyTableData("Samlet", economy.hussum)}
 
 
@@ -98,12 +98,12 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"><b>Antal</b></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
-                        {this.economyTableData("under 250.000 kr.", economy.ant_hus_in, economy.husinksum)}
-                        {this.economyTableData("250.000 - 449.999 kr.", economy.ant_hus__1, economy.husinksum)}
-                        {this.economyTableData("450.000 - 699.999 kr.", economy.ant_hus__2, economy.husinksum)}
-                        {this.economyTableData("700.000 - 999.999 kr.", economy.ant_hus__3, economy.husinksum)}
-                        {this.economyTableData("1.000.000 kr. og derover", economy.ant_hus__4, economy.husinksum)}
-                        {this.economyTableData("Uden indkomst-informationer", economy.ant_hus__5, economy.husinksum)}
+                        {this.economyTableData("under 250.000 kr.", economy.ant_hus_indk1_, economy.husinksum)}
+                        {this.economyTableData("250.000 - 449.999 kr.", economy.ant_hus_indk2_, economy.husinksum)}
+                        {this.economyTableData("450.000 - 699.999 kr.", economy.ant_hus_indk3_, economy.husinksum)}
+                        {this.economyTableData("700.000 - 999.999 kr.", economy.ant_hus_indk4_, economy.husinksum)}
+                        {this.economyTableData("1.000.000 kr. og derover", economy.ant_hus_indk5_, economy.husinksum)}
+                        {this.economyTableData("Uden indkomst-informationer", economy.ant_hus_indk9_, economy.husinksum)}
                         {this.economyTableData("Samlet", economy.husinksum)}
                         
 
@@ -115,7 +115,7 @@ class SocioeconomicTable extends React.Component{
                         </tr>
                         {this.economyTableData("0 biler", economy.ant_hus_0b, economy.husbilsum)}
                         {this.economyTableData("1 bil", economy.ant_hus_1b, economy.husbilsum)}
-                        {this.economyTableData("2+ biler", economy.ant_hus_2p, economy.husbilsum)}
+                        {this.economyTableData("2+ biler", economy.ant_hus_2pl_b, economy.husbilsum)}
                         {this.economyTableData("Samlet", economy.husbilsum)}
                     </tbody>
             </table>
