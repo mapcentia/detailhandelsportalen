@@ -15,7 +15,7 @@ router.post('/api/extension/economydata', function(req, response){
     //console.log('type:', type);
     //console.log('req.body.q', req.body.q);
     //console.log('------------')
-    var sqlQueryString = `SELECT * FROM detail.socio_oekomiske_noegle_tal WHERE ST_intersects(the_geom ,ST_transform(ST_geomfromtext( '${req.body.q.catchment}', 4326), 25832))`;
+    var sqlQueryString = `SELECT * FROM detail.socio_oekomiske_noegle_tal_centroids WHERE ST_intersects(the_geom ,ST_transform(ST_geomfromtext( '${req.body.q.catchment}', 4326), 25832))`;
     //AND gc2_version_end_date IS NULL
 
     var host;
