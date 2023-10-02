@@ -22,8 +22,8 @@ module.exports = function sumEconomyValues(values){
         var ant_husst_2per = DHP_PEV(e.ant_husst_2per, r.ant_husst_2per);
         var ant_husst_3per = DHP_PEV(e.ant_husst_3per, r.ant_husst_3per);
         var ant_husst_4per = DHP_PEV(e.ant_husst_4per, r.ant_husst_4per);
-        var ant_husst_5pl_ = DHP_PEV(e.ant_husst_5pl_, r.ant_husst_5pl_);
-        var hussum     = ant_husst_1per+ant_husst_2per+ant_husst_3per+ant_husst_4per+ant_husst_5pl_;
+        var ant_husst_5pl = DHP_PEV(e.ant_husst_5pl, r.ant_husst_5pl);
+        var hussum     = ant_husst_1per+ant_husst_2per+ant_husst_3per+ant_husst_4per+ant_husst_5pl;
 
         var hus_type1  = DHP_PEV(e.hus_type1, r.hus_type1);
         var hus_type2  = DHP_PEV(e.hus_type2, r.hus_type2);
@@ -56,6 +56,9 @@ module.exports = function sumEconomyValues(values){
         var ant_udd9 = DHP_PEV(e.ant_udd9, r.ant_udd9);
         var uddansum = ant_udd1 + ant_udd2 + ant_udd3 + ant_udd4 + ant_udd5 + ant_udd6 + ant_udd9;
         
+        var antpersh_4   = DHP_PEV(e.antpersh_4, r.antpersh_4);
+        var anthust_4   = DHP_PEV(e.anthust_4, r.anthust_4);
+
         var result = {
             properties: {
                 ant_0_17pe: ant_0_17pe,
@@ -70,7 +73,7 @@ module.exports = function sumEconomyValues(values){
                 ant_husst_2per: ant_husst_2per,
                 ant_husst_3per: ant_husst_3per,
                 ant_husst_4per: ant_husst_4per,
-                ant_husst_5pl_: ant_husst_5pl_,
+                ant_husst_5pl: ant_husst_5pl,
                 hussum: hussum,
 
                 hus_type1 : hus_type1,
@@ -102,7 +105,11 @@ module.exports = function sumEconomyValues(values){
                 ant_udd5  : ant_udd5,
                 ant_udd6: ant_udd6,
                 ant_udd9: ant_udd9,
-                uddansum  : uddansum
+                uddansum  : uddansum,
+
+                antpersh_4 : antpersh_4,
+                
+                anthust_4 : anthust_4
             }
         }
         return result;

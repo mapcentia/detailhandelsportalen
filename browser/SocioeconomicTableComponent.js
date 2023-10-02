@@ -72,7 +72,7 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableData("2 personer", economy.ant_husst_2per, economy.hussum)}
                         {this.economyTableData("3 personer", economy.ant_husst_3per, economy.hussum)}
                         {this.economyTableData("4 personer", economy.ant_husst_4per, economy.hussum)}
-                        {this.economyTableData("5+ personer", economy.ant_husst_5pl_, economy.hussum)}
+                        {this.economyTableData("5+ personer", economy.ant_husst_5pl, economy.hussum)}
                         {this.economyTableData("Samlet", economy.hussum)}
 
 
