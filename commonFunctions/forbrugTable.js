@@ -157,7 +157,7 @@ class ForbrugTable extends React.Component{
                             <td colSpan="2" width="100%">{householdInformation}</td>
                         </tr>*/}
                         <tr>
-                            <td colSpan="2" width="100%"><i>*Forbrugstal 2022-niveau</i></td>
+                            <td colSpan="2" width="100%" ><i class="text-muted small">*Forbrugstal 2022-niveau</i></td>
                         </tr>
                     </tbody>
             </table>
