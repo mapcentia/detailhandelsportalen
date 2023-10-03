@@ -144,7 +144,7 @@ class ForbrugTable extends React.Component{
             renderData = <table className="table tableContainer">
                     <tbody>
                         <tr>
-                            <td colSpan="2"><b>Forbrug (Husstandsbaseret)</b></td>
+                            <td colSpan="2"><b>Forbrug (Husstandsbaseret)*</b></td>
                         </tr>
                         {Object.keys(spendingResults).map((val, index) => {
                             return <tr key={index}>
@@ -153,11 +153,15 @@ class ForbrugTable extends React.Component{
                             </tr>
                         })}
 
-                        <tr>
+                         {/*<tr>
                             <td colSpan="2" width="100%">{householdInformation}</td>
+                        </tr>*/}
+                        <tr>
+                            <td colSpan="2" width="100%"><i>*Forbrugstal 2022-niveau</i></td>
                         </tr>
                     </tbody>
-            </table>;
+            </table>
+            ;
         }
 
        return renderData;
