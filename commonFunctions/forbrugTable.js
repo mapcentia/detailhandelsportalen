@@ -140,7 +140,7 @@ class ForbrugTable extends React.Component{
                         {Object.keys(spendingResults).map((val, index) => {
                             return <tr key={index}>
                                 <td width="50%">{val}</td>
-                                <td width="50%" style={style}>{parseInt(spendingResults[val]).toLocaleString("da-DK")} kr/år</td>
+                                <td width="50%" style={style}>{(Math.round(parseInt(spendingResults[val]) / 1000) * 1000).toLocaleString("da-DK")} kr/år</td>
                             </tr>
                         })}
 
