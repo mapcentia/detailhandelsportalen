@@ -55,9 +55,9 @@ class ForbrugTable extends React.Component{
         //  Updated 03-10-2023
         //  Forbrugsberegning_v5.xlsm
         let spendingsData = {
-            "Dagligvarer": [38061, 50698, 65979, 82164, 108199, 0],
-            "Beklædning": [8262, 9153, 12779, 15626, 25086, 0],
-            "Øvrige udvalgsvarer": [ 13187, 23208, 37665, 53491, 87199, 0]
+            "Dagligvarer": [38061, 50698, 65979, 82164, 108199, 68846],
+            "Beklædning": [8262, 9153, 12779, 15626, 25086, 14112],
+            "Øvrige udvalgsvarer": [ 13187, 23208, 37665, 53491, 87199, 42874]
         }
         
         let spending_min = 0;
