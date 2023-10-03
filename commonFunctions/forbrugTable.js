@@ -45,10 +45,19 @@ class ForbrugTable extends React.Component{
         //FU07: Forbrug efter forbrugsgruppe, region og prisenhed
         // "Key": [ "under 250.000 kr.", "250.000 - 449.999 kr.", "450.000 - 699.999 kr.", "700.000 - 999.999 kr.", "1.000.000 kr. og derover", "Uden indkomst-informationer"],
 
+        //  let spendingsData = {
+        //    "Dagligvarer": [ 32787, 45537, 59384, 71169, 91277, 0],
+        //    "Beklædning": [4055, 7965, 11240, 13372, 27073, 0],
+        //    "Øvrige udvalgsvarer": [ 9365, 17465, 29148, 41682, 63804, 0]
+        //}
+  
+
+        //  Updated 03-10-2023
+        //  Forbrugsberegning_v5.xlsm
         let spendingsData = {
-            "Dagligvarer": [ 32787, 45537, 59384, 71169, 91277, 0],
-            "Beklædning": [4055, 7965, 11240, 13372, 27073, 0],
-            "Øvrige udvalgsvarer": [ 9365, 17465, 29148, 41682, 63804, 0]
+            "Dagligvarer": [38061, 50698, 65979, 82164, 108199, 0],
+            "Beklædning": [8262, 9153, 12779, 15626, 25086, 0],
+            "Øvrige udvalgsvarer": [ 13187, 23208, 37665, 53491, 87199, 0]
         }
         
         let spending_min = 0;
