@@ -20,8 +20,10 @@ class SocioeconomicTable extends React.Component{
                 *@Dann
                 Why this change?
                 <td>{String((Math.round(parseInt(value) / 5000) * 5000).toLocaleString("da-DK"))}</td>
+                 <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
              */}
-             <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
+            
+             <td className="text-right"></td>
             {totalPercentage}
         </tr>
     }

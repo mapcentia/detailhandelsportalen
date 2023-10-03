@@ -1,6 +1,7 @@
 module.exports = function sumEconomyValues(values){
     function DHP_PEV(e, b){
-        let value = Math.round(parseFloat(e)) + Math.round(parseFloat(b));
+        //let value = Math.round(parseFloat(e)) + Math.round(parseFloat(b));
+        let value = parseFloat(e) + parseFloat(b);
         return value;
     }
     if(values.length == 0){
