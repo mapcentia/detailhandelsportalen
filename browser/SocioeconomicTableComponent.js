@@ -23,7 +23,7 @@ class SocioeconomicTable extends React.Component{
                  <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
              */}
             
-             <td className="text-right"></td>
+            <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
             {totalPercentage}
         </tr>
     }
