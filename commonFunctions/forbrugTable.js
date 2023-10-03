@@ -153,15 +153,15 @@ class ForbrugTable extends React.Component{
                             </tr>
                         })}
 
-                         {/*<tr>
-                            <td colSpan="2" width="100%">{householdInformation}</td>
-                        </tr>*/}
+                         
                         <tr>
                             <td colSpan="2" width="100%" ><i class="text-muted small">*Forbrugstal 2022-niveau</i></td>
                         </tr>
+                        {/** <tr>
+                            <td colSpan="2" width="100%">{householdInformation}</td>
+                        </tr>*/ }
                     </tbody>
-            </table>
-            ;
+            </table>;
         }
 
        return renderData;
