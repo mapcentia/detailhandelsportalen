@@ -34,13 +34,13 @@ module.exports = function sumEconomyValues(values){
         var hus_type7  = DHP_PEV(e.hus_type7, r.hus_type7);
         var hustypesum = hus_type1 + hus_type2 + hus_type3 + hus_type4 + hus_type5 + hus_type6 + hus_type7;
 
-        var ant_hus_indk1_ = DHP_PEV(e.ant_hus_indk1_, r.ant_hus_indk1_);
-        var ant_hus_indk2_ = DHP_PEV(e.ant_hus_indk2_, r.ant_hus_indk2_);
-        var ant_hus_indk3_ = DHP_PEV(e.ant_hus_indk3_, r.ant_hus_indk3_);
-        var ant_hus_indk4_ = DHP_PEV(e.ant_hus_indk4_, r.ant_hus_indk4_);
-        var ant_hus_indk5_ = DHP_PEV(e.ant_hus_indk5_, r.ant_hus_indk5_);
-        var ant_hus_indk9_ = DHP_PEV(e.ant_hus_indk9_, r.ant_hus_indk9_);
-        var husinksum = ant_hus_indk1_ + ant_hus_indk2_ + ant_hus_indk3_ + ant_hus_indk4_ + ant_hus_indk5_ + ant_hus_indk9_;
+        var ant_hus_indk1 = DHP_PEV(e.ant_hus_indk1, r.ant_hus_indk1);
+        var ant_hus_indk2 = DHP_PEV(e.ant_hus_indk2, r.ant_hus_indk2);
+        var ant_hus_indk3 = DHP_PEV(e.ant_hus_indk3, r.ant_hus_indk3);
+        var ant_hus_indk4 = DHP_PEV(e.ant_hus_indk4, r.ant_hus_indk4);
+        var ant_hus_indk5 = DHP_PEV(e.ant_hus_indk5, r.ant_hus_indk5);
+        var ant_hus_indk9 = DHP_PEV(e.ant_hus_indk9, r.ant_hus_indk9);
+        var husinksum = ant_hus_indk1 + ant_hus_indk2 + ant_hus_indk3 + ant_hus_indk4 + ant_hus_indk5 + ant_hus_indk9;
 
         var ant_hus_0b = DHP_PEV(e.ant_hus_0b, r.ant_hus_0b);
         var ant_hus_1b = DHP_PEV(e.ant_hus_1b, r.ant_hus_1b);
@@ -85,12 +85,12 @@ module.exports = function sumEconomyValues(values){
                 hus_type7 : hus_type7,
                 hustypesum: hustypesum,
 
-                ant_hus_indk1_: ant_hus_indk1_,
-                ant_hus_indk2_: ant_hus_indk2_,
-                ant_hus_indk3_: ant_hus_indk3_,
-                ant_hus_indk4_: ant_hus_indk4_,
-                ant_hus_indk5_: ant_hus_indk5_,
-                ant_hus_indk9_: ant_hus_indk9_,
+                ant_hus_indk1: ant_hus_indk1,
+                ant_hus_indk2: ant_hus_indk2,
+                ant_hus_indk3: ant_hus_indk3,
+                ant_hus_indk4: ant_hus_indk4,
+                ant_hus_indk5: ant_hus_indk5,
+                ant_hus_indk9: ant_hus_indk9,
                 husinksum : husinksum,
 
                 ant_hus_0b: ant_hus_0b,
