@@ -46,9 +46,9 @@ class ForbrugTable extends React.Component{
         // "Key": [ "under 250.000 kr.", "250.000 - 449.999 kr.", "450.000 - 699.999 kr.", "700.000 - 999.999 kr.", "1.000.000 kr. og derover", "Uden indkomst-informationer"],
 
         let spendingsData = {
-            "Dagligvare": [ 32787, 45537, 59384, 71169, 91277, 0],
+            "Dagligvarer": [ 32787, 45537, 59384, 71169, 91277, 0],
             "Beklædning": [4055, 7965, 11240, 13372, 27073, 0],
-            "Øvrige": [ 9365, 17465, 29148, 41682, 63804, 0]
+            "Øvrige udvalgsvarer": [ 9365, 17465, 29148, 41682, 63804, 0]
         }
         
         let spending_min = 0;
@@ -119,12 +119,13 @@ class ForbrugTable extends React.Component{
                 //house hold calculation results DOM when there's information
                 // IMPORTANT! remember to use JavaScript HTML names. class will be className. col-span becomes colSpan
                 householdInformation = <React.Fragment>
-                    <div>
+                   {/* <div>
                         Forbrugsberegningerne er baseret på indkomstdata fra {parseInt(hhValues.husinksum).toLocaleString("da-DK")}​ husstande​​​.
                     </div>
                     <div>
                         DST har ikke kunne levere indkomstdata for {parseInt(hhValues.diff).toLocaleString("da-DK")} husstande ({hhValues.diff_percent} % ​), hvilket betyder at forbrugsberegningerne kan være undervurderet med mellem {(hhValues.spending_min/1000000).toFixed(1)} og {(hhValues.spending_max/1000000).toFixed(1)} mio kr.​
-                    </div>
+                    </div> 
+                    */}
 
                 </React.Fragment>
             }else{
