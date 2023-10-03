@@ -35,7 +35,7 @@ class SocioeconomicTable extends React.Component{
                     <tbody>
                         <tr>
                             <td><b>Befolkning (Personer)</b></td>
-                            <td className="text-right"><b>Antal</b></td>
+                            <td className="text-right"></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
                         {this.economyTableData("0-17 år", economy.ant_0_17pe, economy.befsum)}
@@ -49,7 +49,7 @@ class SocioeconomicTable extends React.Component{
 
                         <tr>
                             <td><b>Uddannelsesniveau (Personer)</b></td>
-                            <td className="text-right"><b>Antal</b></td>
+                            <td className="text-right"></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
 
@@ -66,7 +66,7 @@ class SocioeconomicTable extends React.Component{
 
                         <tr>
                             <td><b>Husstandsstørrelse (Husstande)</b></td>
-                            <td className="text-right"><b>Antal</b></td>
+                            <td className="text-right"></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
                         {this.economyTableData("1 person", economy.ant_husst_1per, economy.hussum)}
@@ -80,7 +80,7 @@ class SocioeconomicTable extends React.Component{
                         <tr><td colSpan="3"></td></tr>
                         <tr>
                             <td><b>Husstandstype (Husstande)</b></td>
-                            <td className="text-right"><b>Antal</b></td>
+                            <td className="text-right"></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
                         {this.economyTableData("Enlige under 60 år uden børn", economy.hus_type1, economy.hustypesum)}
@@ -96,7 +96,7 @@ class SocioeconomicTable extends React.Component{
                         <tr><td colSpan="3"></td></tr>
                         <tr>
                             <td><b>Husstandsindkomst (husstande)</b></td>
-                            <td className="text-right"><b>Antal</b></td>
+                            <td className="text-right"></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
                         {this.economyTableData("under 250.000 kr.", economy.ant_hus_indk1, economy.husinksum)}
@@ -111,7 +111,7 @@ class SocioeconomicTable extends React.Component{
                         <tr><td colSpan="3"></td></tr>
                         <tr>
                             <td><b>Bilejerskab (Husstande)</b></td>
-                            <td className="text-right"><b>Antal</b></td>
+                            <td className="text-right"></td>
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
                         {this.economyTableData("0 biler", economy.ant_hus_0b, economy.husbilsum)}
