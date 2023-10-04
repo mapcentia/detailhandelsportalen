@@ -129,7 +129,7 @@ class SocioeconomicTable extends React.Component{
 
     render(){        
         return (
-            <div>
+            <div style="width:90%">
                 <div className="social-economy-header">
                     <a href={"#social-economy-table"+this.state.id} data-toggle="collapse"> Socioøkonomiske nøgletal <i className="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </div>
