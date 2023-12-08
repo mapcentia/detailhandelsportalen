@@ -128,16 +128,20 @@ class SocioeconomicTable extends React.Component{
     }
 
     render(){        
-        return (
-            <div>
-                <div className="social-economy-header">
-                    <a href={"#social-economy-table"+this.state.id} data-toggle="collapse"> Socioøkonomiske nøgletal <i className="fa fa-chevron-down" aria-hidden="true"></i></a>
+        if(this.props.userLevel != null && this.props.userLevel >= 3)   {  
+            return (
+                <div>
+                    <div className="social-economy-header">
+                        <a href={"#social-economy-table"+this.state.id} data-toggle="collapse"> Socioøkonomiske nøgletal <i className="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    </div>
+                    <div id={"social-economy-table"+this.state.id} className="intersect-socioeconomy-table collapse">
+                        {this.renderEconomyTable(this.props.economy)}
+                    </div>
                 </div>
-                <div id={"social-economy-table"+this.state.id} className="intersect-socioeconomy-table collapse">
-                    {this.renderEconomyTable(this.props.economy)}
-                </div>
-            </div>
-        )
+            );
+        }else if(this.state.userLevel == null){
+            return null;
+        }
     }
 }
 
