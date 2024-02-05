@@ -118,6 +118,28 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableData("1 bil", economy.ant_hus_1b, economy.husbilsum)}
                         {this.economyTableData("2+ biler", economy.ant_hus_2pl_b, economy.husbilsum)}
                         {this.economyTableData("Samlet", economy.husbilsum)}
+
+                        <tr><td colSpan="3"></td></tr>
+                        <tr>
+                            <td><b>Trækkrog (Husstande)</b></td>
+                            <td className="text-right"></td>
+                            <td className="text-right"><b>Andel</b></td>
+                        </tr>
+                        {this.economyTableData("0 trækkroge", economy.ant_hus_0k, economy.huskrogsum)}
+                        {this.economyTableData("1 trækkroge", economy.ant_hus_1k, economy.huskrogsum)}
+                        {this.economyTableData("2+ trækkroge", economy.ant_hus_2k, economy.huskrogsum)}
+                        {this.economyTableData("Samlet", economy.huskrogsum)}
+
+                        <tr><td colSpan="3"></td></tr>
+                        <tr>
+                            <td><b>Trailerejerskab (Husstande)</b></td>
+                            <td className="text-right"></td>
+                            <td className="text-right"><b>Andel</b></td>
+                        </tr>
+                        {this.economyTableData("0 trailere", economy.ant_hus_0t, economy.hustrailersum)}
+                        {this.economyTableData("1 trailere", economy.ant_hus_1t, economy.hustrailersum)}
+                        {this.economyTableData("2+ trailere", economy.ant_hus_2t, economy.hustrailersum)}
+                        {this.economyTableData("Samlet", economy.hustrailersum)}
                     </tbody>
             </table>
         }
@@ -130,7 +152,7 @@ class SocioeconomicTable extends React.Component{
     render(){        
        //if(this.props.userLevel != null && this.props.userLevel >= 3)   {  
        //      console.log('renderEconomyTable economy user level 3');
-            console.log('Userlevel:'+this.props.userLevel);
+            //console.log('Userlevel:',this.props.userLevel);
             return (
                 <div>
                     <div className="social-economy-header">

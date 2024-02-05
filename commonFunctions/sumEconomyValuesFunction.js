@@ -35,6 +35,7 @@ module.exports = function sumEconomyValues(values){
         var hus_type7  = DHP_PEV(e.hus_type7, r.hus_type7);
         var hustypesum = hus_type1 + hus_type2 + hus_type3 + hus_type4 + hus_type5 + hus_type6 + hus_type7;
 
+        //
         var ant_hus_indk1 = DHP_PEV(e.ant_hus_indk1, r.ant_hus_indk1);
         var ant_hus_indk2 = DHP_PEV(e.ant_hus_indk2, r.ant_hus_indk2);
         var ant_hus_indk3 = DHP_PEV(e.ant_hus_indk3, r.ant_hus_indk3);
@@ -42,12 +43,25 @@ module.exports = function sumEconomyValues(values){
         var ant_hus_indk5 = DHP_PEV(e.ant_hus_indk5, r.ant_hus_indk5);
         var ant_hus_indk9 = DHP_PEV(e.ant_hus_indk9, r.ant_hus_indk9);
         var husinksum = ant_hus_indk1 + ant_hus_indk2 + ant_hus_indk3 + ant_hus_indk4 + ant_hus_indk5 + ant_hus_indk9;
-
+        
+        //Bil ejerskab
         var ant_hus_0b = DHP_PEV(e.ant_hus_0b, r.ant_hus_0b);
         var ant_hus_1b = DHP_PEV(e.ant_hus_1b, r.ant_hus_1b);
         var ant_hus_2pl_b = DHP_PEV(e.ant_hus_2pl_b, r.ant_hus_2pl_b);
         var husbilsum  = ant_hus_0b+ant_hus_2pl_b+ant_hus_1b;
 
+        //Trækkroge
+        var ant_hus_0k = DHP_PEV(e.ant_hus_0k, r.ant_hus_0k);
+        var ant_hus_1k = DHP_PEV(e.ant_hus_1k, r.ant_hus_1k);
+        var ant_hus_2k = DHP_PEV(e.ant_hus_2k, r.ant_hus_2k);
+        var huskrogsum  = ant_hus_0k+ant_hus_1k+ant_hus_2k;
+
+        //Trailere
+        var ant_hus_0t = DHP_PEV(e.ant_hus_0t, r.ant_hus_0t);
+        var ant_hus_1t = DHP_PEV(e.ant_hus_1t, r.ant_hus_1t);
+        var ant_hus_2t = DHP_PEV(e.ant_hus_2t, r.ant_hus_2t);
+        var hustrailersum  = ant_hus_0k+ant_hus_1k+ant_hus_2k;
+        
         var ant_udd1   = DHP_PEV(e.ant_udd1, r.ant_udd1);
         var ant_udd2   = DHP_PEV(e.ant_udd2, r.ant_udd2);
         var ant_udd3   = DHP_PEV(e.ant_udd3, r.ant_udd3);
@@ -98,6 +112,16 @@ module.exports = function sumEconomyValues(values){
                 ant_hus_1b: ant_hus_1b,
                 ant_hus_2pl_b: ant_hus_2pl_b,
                 husbilsum : husbilsum,
+                
+                ant_hus_0k: ant_hus_0k,
+                ant_hus_1k: ant_hus_1k,
+                ant_hus_2k: ant_hus_2k,
+                huskrogsum : huskrogsum,
+
+                ant_hus_0t: ant_hus_0t,
+                ant_hus_1t: ant_hus_1t,
+                ant_hus_2t: ant_hus_2t,
+                hustrailersum : hustrailersum,
                 
                 ant_udd1  : ant_udd1,
                 ant_udd2  : ant_udd2,
