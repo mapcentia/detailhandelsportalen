@@ -107,6 +107,20 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableData("Uden indkomst-informationer", economy.ant_hus_indk9, economy.husinksum)}
                         {this.economyTableData("Samlet", economy.husinksum)}
                         
+                        <tr><td colSpan="3"></td></tr>
+                        <tr>
+                            <td><b>BBR enheder</b></td>
+                            <td className="text-right"></td>
+                            <td className="text-right"><b>Andel</b></td>
+                        </tr>
+                        {this.economyTableData("under 250.000 kr.", economy.ant_hus_indk1, economy.husinksum)}
+                        {this.economyTableData("250.000 - 449.999 kr.", economy.ant_hus_indk2, economy.husinksum)}
+                        {this.economyTableData("450.000 - 699.999 kr.", economy.ant_hus_indk3, economy.husinksum)}
+                        {this.economyTableData("700.000 - 999.999 kr.", economy.ant_hus_indk4, economy.husinksum)}
+                        {this.economyTableData("1.000.000 kr. og derover", economy.ant_hus_indk5, economy.husinksum)}
+                        {this.economyTableData("Uden indkomst-informationer", economy.ant_hus_indk9, economy.husinksum)}
+                        {this.economyTableData("Samlet", economy.husinksum)}
+
 
                         <tr><td colSpan="3"></td></tr>
                         <tr>
