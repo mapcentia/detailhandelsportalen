@@ -6,14 +6,14 @@ class SocioeconomicTable extends React.Component{
             id: Math.random().toString(36).substring(7)
         }
     }
-    economyTableData(name, value, total, type, showAbsoluteValues) {
+    economyTableData(name, value, total, showAbsoluteValues) {
 
         let totalPercentage = null;
         if (total) {
           const percentage = Math.round((value / total) * 100);
           let percentageDisplay = `${percentage} %`;
       
-          if (showAbsoluteValues) {
+        if (showAbsoluteValues) {
             percentageDisplay += ` (${parseInt(value).toLocaleString("da-DK")})`;
           }
           totalPercentage = <td className="text-right">{percentageDisplay}</td>;
@@ -152,7 +152,7 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"></td>
                             <td className="text-right"><b>Antal</b></td>
                         </tr>
-                        {this.economyTableData("Parcel", economy.bbr_parcel_sum, bbrsum, true)}
+                        {this.economyTableData("Parcel", economy.bbr_parcel_sum, economy.bbrsum, true)}
                         
 
                     </tbody>
