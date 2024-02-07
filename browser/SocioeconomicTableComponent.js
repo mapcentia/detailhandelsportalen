@@ -37,8 +37,8 @@ class SocioeconomicTable extends React.Component{
 
              */}
              <td className="text-right"></td>
-           
-             {String(Math.round(value))}
+             console.log("economyTableDataAbsolute",value)
+             {value}
         </tr>
     }
 
