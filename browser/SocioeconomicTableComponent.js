@@ -162,7 +162,7 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"></td>
                             <td className="text-right"><b>Antal</b></td>
                         </tr>
-                        {this.economyTableDataAbsolute("PStuehus til landbrugsejendom", economy.ant_bbr_110,economybbrsum )}
+                        {this.economyTableDataAbsolute("PStuehus til landbrugsejendom", economy.ant_bbr_110,economy.bbrsum )}
                         
 
                     </tbody>
