@@ -148,13 +148,6 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableData("2+ trailere", economy.ant_hus_2t, economy.hustrailersum)}
                         {this.economyTableData("Samlet", economy.hustrailersum)}
 
-                        <tr><td colSpan="3"></td></tr>
-                        <tr>
-                            <td><b>Boligenheder</b></td>
-                            <td className="text-right"></td>
-                            <td className="text-right"><b>Antal</b></td>
-                        </tr>
-                        {this.economyTableDataAbsolute("Parcel", economy.bbr_parcel_sum)}
 
                         <tr><td colSpan="3"></td></tr>
                         <tr>
@@ -162,7 +155,11 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"></td>
                             <td className="text-right"><b>Antal</b></td>
                         </tr>
-                        {this.economyTableDataAbsolute("PStuehus til landbrugsejendom", economy.ant_bbr_110,economy.bbrsum )}
+                        {this.economyTableDataAbsolute("Enfamiliehuse", economy.bbr_parcel_sum)}
+                        {this.economyTableDataAbsolute("Række-, kæde-, -klynge og bobbelthuse", economy.bbr_raekke_sum)}
+                        {this.economyTableDataAbsolute("Etagebolige og flerfamiliehuse", economy.bbr_etage_sum)}
+                        {this.economyTableDataAbsolute("Sommerhuse", economy.bbr_sommerhus_sum)}
+                        {this.economyTableDataAbsolute("Kolonihavehuse", economy.bbr_kolo_sum)}
                         
 
                     </tbody>
