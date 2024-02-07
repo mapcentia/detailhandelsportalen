@@ -59,10 +59,6 @@ module.exports = function sumEconomyValues(values){
         var ant_bbr_131 = DHP_PEV(e.ant_bbr_131, r.ant_bbr_131);    // Række-, kæde- og klyngehus
         var ant_bbr_132 = DHP_PEV(e.ant_bbr_132, r.ant_bbr_132);    // Dobbelthus
         var ant_bbr_140 = DHP_PEV(e.ant_bbr_140, r.ant_bbr_140);    // Etagebolig-bygning, flerfamiliehus eller to-familiehus
-        var ant_bbr_150 = DHP_PEV(e.ant_bbr_150, r.ant_bbr_150);    // Kollegium
-        var ant_bbr_160 = DHP_PEV(e.ant_bbr_160, r.ant_bbr_160);    // Boligbygning til døgninstitution
-        var ant_bbr_185 = DHP_PEV(e.ant_bbr_185, r.ant_bbr_185);    // 185 - Anneks i tilknytning til helårsbolig.
-        var ant_bbr_190 = DHP_PEV(e.ant_bbr_190, r.ant_bbr_190);    // 190 - Anden bygning til helårsbeboelse
         var ant_bbr_510 = DHP_PEV(e.ant_bbr_510, r.ant_bbr_510);    // 510 - Sommerhus
         var ant_bbr_540 = DHP_PEV(e.ant_bbr_540, r.ant_bbr_540);    // 540 - Kolonihavehus
         //var bbrsum = ant_bbr_110 +ant_bbr_120+ant_bbr_121+ant_bbr_122+ant_bbr_130+ant_bbr_131+ant_bbr_132+ant_bbr_140+ant_bbr_150+ant_bbr_160+ant_bbr_185+ant_bbr_190+ant_bbr_510+ant_bbr_540;
@@ -140,13 +136,9 @@ module.exports = function sumEconomyValues(values){
                 ant_bbr_131: ant_bbr_131,
                 ant_bbr_132: ant_bbr_132,
                 ant_bbr_140: ant_bbr_140,
-                ant_bbr_150: ant_bbr_150,
-                ant_bbr_160: ant_bbr_160,
-                ant_bbr_185: ant_bbr_185,
-                ant_bbr_190: ant_bbr_190,
                 ant_bbr_510: ant_bbr_510,
                 ant_bbr_540: ant_bbr_540,
-                bbrsum: ant_bbr_110 +ant_bbr_120+ant_bbr_121+ant_bbr_122+ant_bbr_130+ant_bbr_131+ant_bbr_132+ant_bbr_140+ant_bbr_150+ant_bbr_160+ant_bbr_185+ant_bbr_190+ant_bbr_510+ant_bbr_540,
+                bbrsum: ant_bbr_110 +ant_bbr_120+ant_bbr_121+ant_bbr_122+ant_bbr_130+ant_bbr_131+ant_bbr_132+ant_bbr_140+ant_bbr_140+ant_bbr_540,
                 
                 bbr_parcel_sum: ant_bbr_110 +ant_bbr_120+ant_bbr_121+ant_bbr_122,
                 bbr_raekke_sum: ant_bbr_130+ant_bbr_131+ant_bbr_132,
