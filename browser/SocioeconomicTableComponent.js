@@ -6,26 +6,32 @@ class SocioeconomicTable extends React.Component{
             id: Math.random().toString(36).substring(7)
         }
     }
-    economyTableData(name, value, total){
+    economyTableData(name, value, total, type, showAbsoluteValues) {
+
         let totalPercentage = null;
-        if(total){
-            totalPercentage = <td className="text-right">{String(Math.round((value/total)*100))} %</td>;
-        }else{
-            totalPercentage = <td className="text-right">100%</td>
+        if (total) {
+          const percentage = Math.round((value / total) * 100);
+          let percentageDisplay = `${percentage} %`;
+      
+          if (showAbsoluteValues) {
+            percentageDisplay += ` (${parseInt(value).toLocaleString("da-DK")})`;
+          }
+          totalPercentage = <td className="text-right">{percentageDisplay}</td>;
+        } else {
+          totalPercentage = <td className="text-right">100%</td>;
         }
-
-        return <tr>
+      
+        return (
+          <tr>
             <td>{name}</td>
-            {/*
-                 Show absolute values
-                 <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
-
-             */}
-             <td className="text-right"></td>
-           
+      
+            <td className="text-right"></td>
+      
+            {/* Show absolute values */}
             {totalPercentage}
-        </tr>
-    }
+          </tr>
+        );
+      }
 
     renderEconomyTable(economy){
         let economyTableSum = <div style={{textAlign:"center"}}>Ingen data</div>;
@@ -106,21 +112,6 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableData("1.000.000 kr. og derover", economy.ant_hus_indk5, economy.husinksum)}
                         {this.economyTableData("Uden indkomst-informationer", economy.ant_hus_indk9, economy.husinksum)}
                         {this.economyTableData("Samlet", economy.husinksum)}
-                        
-                        <tr><td colSpan="3"></td></tr>
-                        <tr>
-                            <td><b>BBR enheder</b></td>
-                            <td className="text-right"></td>
-                            <td className="text-right"><b>Andel</b></td>
-                        </tr>
-                        {this.economyTableData("under 250.000 kr.", economy.ant_hus_indk1, economy.husinksum)}
-                        {this.economyTableData("250.000 - 449.999 kr.", economy.ant_hus_indk2, economy.husinksum)}
-                        {this.economyTableData("450.000 - 699.999 kr.", economy.ant_hus_indk3, economy.husinksum)}
-                        {this.economyTableData("700.000 - 999.999 kr.", economy.ant_hus_indk4, economy.husinksum)}
-                        {this.economyTableData("1.000.000 kr. og derover", economy.ant_hus_indk5, economy.husinksum)}
-                        {this.economyTableData("Uden indkomst-informationer", economy.ant_hus_indk9, economy.husinksum)}
-                        {this.economyTableData("Samlet", economy.husinksum)}
-
 
                         <tr><td colSpan="3"></td></tr>
                         <tr>
@@ -154,6 +145,16 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableData("1 trailere", economy.ant_hus_1t, economy.hustrailersum)}
                         {this.economyTableData("2+ trailere", economy.ant_hus_2t, economy.hustrailersum)}
                         {this.economyTableData("Samlet", economy.hustrailersum)}
+
+                        <tr><td colSpan="3"></td></tr>
+                        <tr>
+                            <td><b>Boligenheder</b></td>
+                            <td className="text-right"></td>
+                            <td className="text-right"><b>Antal</b></td>
+                        </tr>
+                        {this.economyTableData("Parcel", economy.bbr_parcel_sum, bbrsum, true)}
+                        
+
                     </tbody>
             </table>
         }
