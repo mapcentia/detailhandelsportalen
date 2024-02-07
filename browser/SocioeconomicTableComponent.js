@@ -28,12 +28,10 @@ class SocioeconomicTable extends React.Component{
     }
 
     economyTableDataAbsolute(name, value){
-       
         return <tr>
             <td>{name}</td>
-             <td className="text-right"></td>
-             {parseInt(value).toLocaleString("da-DK")}
-             {value}
+            <td className="text-right"></td>
+            {isNaN(parseInt(value)) ? value : parseInt(value).toLocaleString("da-DK")}
         </tr>
     }
 
@@ -157,6 +155,14 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"><b>Antal</b></td>
                         </tr>
                         {this.economyTableDataAbsolute("Parcel", economy.bbr_parcel_sum)}
+
+                        <tr><td colSpan="3"></td></tr>
+                        <tr>
+                            <td><b>Boligenheder</b></td>
+                            <td className="text-right"></td>
+                            <td className="text-right"><b>Antal</b></td>
+                        </tr>
+                        {this.economyTableDataAbsolute("PStuehus til landbrugsejendom", economy.ant_bbr_110,economybbrsum )}
                         
 
                     </tbody>
