@@ -34,10 +34,12 @@ class SocioeconomicTable extends React.Component{
             {/*
                  Show absolute values
                  <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
-
-             */}
-             <td className="text-right"></td>
+                
+             */
              console.log("economyTableDataAbsolute",value)
+             }
+             <td className="text-right"></td>
+             {parseInt(value).toLocaleString("da-DK")}
              {value}
         </tr>
     }

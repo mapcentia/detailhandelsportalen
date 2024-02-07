@@ -140,7 +140,8 @@ module.exports = function sumEconomyValues(values){
                 ant_bbr_540: ant_bbr_540,
                 bbrsum: ant_bbr_110 +ant_bbr_120+ant_bbr_121+ant_bbr_122+ant_bbr_130+ant_bbr_131+ant_bbr_132+ant_bbr_140+ant_bbr_140+ant_bbr_540,
                 
-                bbr_parcel_sum: ant_bbr_110 +ant_bbr_120+ant_bbr_121+ant_bbr_122,
+                bbr_parcel_sum: ant_bbr_110+ant_bbr_120+ant_bbr_121+ant_bbr_122,
+
                 bbr_raekke_sum: ant_bbr_130+ant_bbr_131+ant_bbr_132,
                 bbr_etage_sum: ant_bbr_140,
                 bbr_sommerhus_sum: ant_bbr_510,
