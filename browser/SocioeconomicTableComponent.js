@@ -160,8 +160,8 @@ class SocioeconomicTable extends React.Component{
                         {this.economyTableDataAbsolute("110", economy.ant_bbr_110)}
                         {this.economyTableDataAbsolute("120", economy.ant_bbr_120)}
                         {this.economyTableDataAbsolute("121", economy.ant_bbr_121)}
-                        {this.economyTableDataAbsolute("121", economy.ant_bbr_1221)}
-                        
+                        {this.economyTableDataAbsolute("122", economy.ant_bbr_122)}
+
                         {this.economyTableDataAbsolute("Række-, kæde-, -klynge og bobbelthuse", economy.bbr_raekke_sum)}
                         {this.economyTableDataAbsolute("Etagebolige og flerfamiliehuse", economy.bbr_etage_sum)}
                         {this.economyTableDataAbsolute("Sommerhuse", economy.bbr_sommerhus_sum)}

@@ -53,7 +53,7 @@ module.exports = function sumEconomyValues(values){
         
         var ant_bbr_110 = DHP_PEV(e.ant_bbr_110, r.ant_bbr_110);    // Stuehus til landbrugsejendom
         var ant_bbr_120 = DHP_PEV(e.ant_bbr_120, r.ant_bbr_120);    // Fritliggende enfamiliehus
-        var ant_bbr_121 = DHP_PEV(e.ant_bbr_121, r.nt_bbr_121);   // Sammenbygget enfamiliehus
+        var ant_bbr_121 = DHP_PEV(e.ant_bbr_121, r.ant_bbr_121);   // Sammenbygget enfamiliehus
         var ant_bbr_122 = DHP_PEV(e.ant_bbr_122, r.ant_bbr_122);    // Fritliggende enfamiliehus i tæt-lav bebyggelse
         var ant_bbr_130 = DHP_PEV(e.ant_bbr_130, r.ant_bbr_130);    // (UDFASES) Række-, kæde-, eller dobbelthus (lodret adskillelse mellem enhederne).
         var ant_bbr_131 = DHP_PEV(e.ant_bbr_131, r.ant_bbr_131);    // Række-, kæde- og klyngehus
