@@ -171,8 +171,10 @@ class SocioeconomicTable extends React.Component{
 
     render(){        
        //if(this.props.userLevel != null && this.props.userLevel >= 3)   {  
+
        //      console.log('renderEconomyTable economy user level 3');
             //console.log('Userlevel:',this.props.userLevel);
+            console.log('data.status.screen_name')
             return (
                 <div>
                     <div className="social-economy-header">
