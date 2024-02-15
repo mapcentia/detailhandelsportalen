@@ -21,9 +21,7 @@ class SocioeconomicTable extends React.Component{
                  <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
 
              */}
-             <td className="text-right"></td>
-           
-            {totalPercentage}
+             <td className="text-right">{totalPercentage}</td>
         </tr>
     }
 
@@ -156,12 +154,6 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"><b>Antal</b></td>
                         </tr>
                         {this.economyTableDataAbsolute("Enfamiliehuse", economy.bbr_parcel_sum)}
-
-                        {this.economyTableDataAbsolute("110", economy.ant_bbr_110)}
-                        {this.economyTableDataAbsolute("120", economy.ant_bbr_120)}
-                        {this.economyTableDataAbsolute("121", economy.ant_bbr_121)}
-                        {this.economyTableDataAbsolute("122", economy.ant_bbr_122)}
-
                         {this.economyTableDataAbsolute("Række-, kæde-, -klynge og bobbelthuse", economy.bbr_raekke_sum)}
                         {this.economyTableDataAbsolute("Etagebolige og flerfamiliehuse", economy.bbr_etage_sum)}
                         {this.economyTableDataAbsolute("Sommerhuse", economy.bbr_sommerhus_sum)}
