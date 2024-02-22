@@ -21,6 +21,7 @@ class SocioeconomicTable extends React.Component{
                  <td className="text-right">{parseInt(value).toLocaleString("da-DK")}</td>
 
              */}
+             <td></td>
              <td className="text-right">{totalPercentage}</td>
         </tr>
     }
@@ -131,7 +132,7 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
                         {this.economyTableData("0 trækkroge", economy.ant_hus_0k, economy.huskrogsum)}
-                        {this.economyTableData("1 trækkroge", economy.ant_hus_1k, economy.huskrogsum)}
+                        {this.economyTableData("1 trækkrog", economy.ant_hus_1k, economy.huskrogsum)}
                         {this.economyTableData("2+ trækkroge", economy.ant_hus_2k, economy.huskrogsum)}
                         {this.economyTableData("Samlet", economy.huskrogsum)}
 
@@ -142,7 +143,7 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"><b>Andel</b></td>
                         </tr>
                         {this.economyTableData("0 trailere", economy.ant_hus_0t, economy.hustrailersum)}
-                        {this.economyTableData("1 trailere", economy.ant_hus_1t, economy.hustrailersum)}
+                        {this.economyTableData("1 trailer", economy.ant_hus_1t, economy.hustrailersum)}
                         {this.economyTableData("2+ trailere", economy.ant_hus_2t, economy.hustrailersum)}
                         {this.economyTableData("Samlet", economy.hustrailersum)}
 
@@ -154,8 +155,8 @@ class SocioeconomicTable extends React.Component{
                             <td className="text-right"><b>Antal</b></td>
                         </tr>
                         {this.economyTableDataAbsolute("Enfamiliehuse", economy.bbr_parcel_sum)}
-                        {this.economyTableDataAbsolute("Række-, kæde-, -klynge og bobbelthuse", economy.bbr_raekke_sum)}
-                        {this.economyTableDataAbsolute("Etagebolige og flerfamiliehuse", economy.bbr_etage_sum)}
+                        {this.economyTableDataAbsolute("Række-, kæde-, -klynge og dobbelthuse", economy.bbr_raekke_sum)}
+                        {this.economyTableDataAbsolute("Etageboliger og flerfamiliehuse", economy.bbr_etage_sum)}
                         {this.economyTableDataAbsolute("Sommerhuse", economy.bbr_sommerhus_sum)}
                         {this.economyTableDataAbsolute("Kolonihavehuse", economy.bbr_kolo_sum)}
                         
