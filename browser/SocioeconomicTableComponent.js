@@ -29,8 +29,8 @@ class SocioeconomicTable extends React.Component{
     economyTableDataAbsolute(name, value){
         return <tr>
             <td>{name}</td>
-            <td className="text-right"></td>
-            {isNaN(parseInt(value)) ? value : parseInt(value).toLocaleString("da-DK")}
+            <td></td>
+            <td className="text-right">{isNaN(parseInt(value)) ? value : parseInt(value).toLocaleString("da-DK")}</td>
         </tr>
     }
 
