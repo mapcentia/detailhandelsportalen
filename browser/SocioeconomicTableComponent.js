@@ -22,7 +22,7 @@ class SocioeconomicTable extends React.Component{
 
              */}
              <td></td>
-             <td className="text-right">{totalPercentage}</td>
+             {totalPercentage}
         </tr>
     }
 
