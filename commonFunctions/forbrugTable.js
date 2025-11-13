@@ -52,7 +52,7 @@ class ForbrugTable extends React.Component{
         //}
   
 
-        //  Updated 03-10-2023.
+        //  Updated 03-10-2023
         //  Forbrugsberegning_v5.xlsm
         let spendingsData = {
             "Dagligvarer": [38061, 50698, 65979, 82164, 108199, 68846],
