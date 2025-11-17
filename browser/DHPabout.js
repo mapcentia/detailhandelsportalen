@@ -23,7 +23,7 @@ class DHPabout extends React.Component{
 
                         <h2>Kontakt</h2>
                         <p>Økonomi &amp; Salg: Kristian Løbner / <a href="mailto:krlb@cowi.com">krlb@cowi.com</a></p>
-                        <p>Drift &amp; Udvikling: Dan Nissen / <a href="mailto:dann@cowi.com">dann@cowi.com</a></p>
+                        <p>Drift &amp; Udvikling: Martin Lunn Rasmussen / <a href="mailto:mrru@cowi.com">dann@cowi.com</a></p>
 
                         <h2>Disclaimer</h2>
                         <p>Dit brugernavn og password er personligt og må ikke videregives til andre.</p>
