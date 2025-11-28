@@ -20,8 +20,8 @@ class ForbrugTable extends React.Component{
 
     shouldComponentUpdate(nextProp, nextState){
         //console.log('ShouldComponentUpdate forbrugtable',{nextProp, nextState});
-        
-        
+
+
         if(!_.isEqual(this.state.houseInSum, nextProp.houseInSum)){
             //console.log('houseInSum Not equal', {houseInSum :this.state.houseInSum, propHouseInSum : nextProp.houseInSum});
             this.state.householdDifference = nextProp.householdDifference
@@ -37,7 +37,7 @@ class ForbrugTable extends React.Component{
         }else{
             return false;
         }
-        
+
     }
 
     getSpending(){
@@ -50,7 +50,7 @@ class ForbrugTable extends React.Component{
         //    "Beklædning": [4055, 7965, 11240, 13372, 27073, 0],
         //    "Øvrige udvalgsvarer": [ 9365, 17465, 29148, 41682, 63804, 0]
         //}
-  
+
 
         //  Updated 03-10-2023
         //  Forbrugsberegning_v5.xlsm
@@ -59,7 +59,7 @@ class ForbrugTable extends React.Component{
             "Beklædning": [8262, 9153, 12779, 15626, 25086, 14112],
             "Øvrige udvalgsvarer": [ 13187, 23208, 37665, 53491, 87199, 42874]
         }
-        
+
         let spending_min = 0;
         Object.keys(spendingsData).forEach(spendingkey => {
             spending_min += spendingsData[spendingkey][0];
@@ -90,10 +90,10 @@ class ForbrugTable extends React.Component{
                 sum_array.push(this.state.houseInSum[house_type] * this.state.spendings[spendings_category][hus_index]);
             });
             // console.log({[spendings_category]: sum_array})
-        
+
             results[spendings_category] = sum_array.reduce((acc, val) => acc + val);
         });
-       
+
         let total = 0;
         Object.keys(results).forEach(key => {
             total += results[key];
@@ -101,12 +101,12 @@ class ForbrugTable extends React.Component{
         results["I alt"] = total;
 
         this.setState({spendings: results}, () => {this.forceUpdate()});
-        
+
     }
 
 
     render(){
-        
+
         let renderData = '';
 
         let spendingResults = null;
@@ -133,7 +133,7 @@ class ForbrugTable extends React.Component{
                     </div>
                     <div>
                         DST har ikke kunne levere indkomstdata for {parseInt(hhValues.diff).toLocaleString("da-DK")} husstande ({hhValues.diff_percent} % ​), hvilket betyder at forbrugsberegningerne kan være undervurderet med mellem {(hhValues.spending_min/1000000).toFixed(1)} og {(hhValues.spending_max/1000000).toFixed(1)} mio kr.​
-                    </div> 
+                    </div>
                     */}
 
                 </React.Fragment>
@@ -153,9 +153,9 @@ class ForbrugTable extends React.Component{
                             </tr>
                         })}
 
-                         
+
                         <tr>
-                            <td colSpan="2" width="100%" ><i class="text-muted small">*Forbrugstal 2022-niveau</i></td>
+                            <td colSpan="2" width="100%" ><i className="text-muted small">*Forbrugstal 2022-niveau</i></td>
                         </tr>
                         {/** <tr>
                             <td colSpan="2" width="100%">{householdInformation}</td>
